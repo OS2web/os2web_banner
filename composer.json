@@ -1,0 +1,12 @@
+{
+  "name": "os2web/os2web_banner",
+  "description": "Banner entity",
+  "type": "drupal-module",
+  "require": {
+    "drupal/core": "*",
+    "drupal/inline_entity_form": "^1.0@RC",
+    "drupal/paragraphs": "*"
+  },
+  "license": "EUPL-1.2",
+  "minimum-stability": "dev"
+}

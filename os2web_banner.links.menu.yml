@@ -1,0 +1,14 @@
+
+# OS2Web Banner menu items definition
+entity.os2web_banner.collection:
+  title: 'OS2Web Banner'
+  route_name: entity.os2web_banner.collection
+  description: 'List OS2Web Banner entities'
+  parent: system.admin_content
+  weight: 100
+
+os2web_banner.admin.structure.settings:
+  title: 'OS2Web Banner'
+  description: 'Configure OS2Web Banner entities'
+  route_name: os2web_banner.settings
+  parent: system.admin_structure

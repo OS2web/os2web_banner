@@ -1,0 +1,26 @@
+langcode: da
+status: true
+dependencies:
+  module:
+    - options
+    - os2web_banner
+id: os2web_banner.field_os2web_banner_butt_link
+field_name: field_os2web_banner_butt_link
+entity_type: os2web_banner
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: internal
+      label: 'Internt link'
+    -
+      value: external
+      label: 'Eksternt link'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

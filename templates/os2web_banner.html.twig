@@ -1,0 +1,22 @@
+{#
+/**
+ * @file os2web_banner.html.twig
+ * Default theme implementation to present OS2Web Banner data.
+ *
+ * This template is used when viewing OS2Web Banner pages.
+ *
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ * - attributes: HTML attributes for the container element.
+ *
+ * @see template_preprocess_os2web_banner()
+ *
+ * @ingroup themeable
+ */
+#}
+<div{{ attributes.addClass('os2web_banner') }}>
+  {% if content %}
+    {{- content -}}
+  {% endif %}
+</div>

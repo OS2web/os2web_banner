@@ -1,0 +1,10 @@
+name: OS2Web banner entity
+type: module
+core: 8.x
+package: OS2Web
+dependencies:
+  - options
+  - link
+  - media
+  - paragraphs
+  - inline_entity_form

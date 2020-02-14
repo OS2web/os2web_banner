@@ -1,0 +1,120 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.os2web_banner.os2web_banner.field_os2web_banner_bg
+    - field.field.os2web_banner.os2web_banner.field_os2web_banner_butt
+    - field.field.os2web_banner.os2web_banner.field_os2web_banner_butt_link
+    - field.field.os2web_banner.os2web_banner.field_os2web_banner_butt_link_e
+    - field.field.os2web_banner.os2web_banner.field_os2web_banner_butt_link_i
+    - field.field.os2web_banner.os2web_banner.field_os2web_banner_butt_text
+    - field.field.os2web_banner.os2web_banner.field_os2web_banner_head
+    - field.field.os2web_banner.os2web_banner.field_os2web_banner_link
+    - field.field.os2web_banner.os2web_banner.field_os2web_banner_text
+  module:
+    - link
+    - os2web_banner
+    - text
+id: os2web_banner.os2web_banner.default
+targetEntityType: os2web_banner
+bundle: os2web_banner
+mode: default
+content:
+  field_os2web_banner_bg:
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_os2web_banner_butt:
+    weight: 5
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_os2web_banner_butt_link:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_os2web_banner_butt_link_e:
+    weight: 9
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_os2web_banner_butt_link_i:
+    weight: 8
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_os2web_banner_butt_text:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_os2web_banner_head:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_os2web_banner_link:
+    weight: 4
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_os2web_banner_text:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 11
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  user_id:
+    type: entity_reference_autocomplete
+    weight: 10
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+hidden:
+  langcode: true

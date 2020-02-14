@@ -1,0 +1,31 @@
+add os2web banner entities:
+  title: 'Create new OS2Web Banner entities'
+
+administer os2web banner entities:
+  title: 'Administer OS2Web Banner entities'
+  description: 'Allow to access the administration form to configure OS2Web Banner entities.'
+  restrict access: true
+
+delete os2web banner entities:
+  title: 'Delete OS2Web Banner entities'
+
+edit os2web banner entities:
+  title: 'Edit OS2Web Banner entities'
+
+view published os2web banner entities:
+  title: 'View published OS2Web Banner entities'
+
+view unpublished os2web banner entities:
+  title: 'View unpublished OS2Web Banner entities'
+
+view all os2web banner revisions:
+  title: 'View all OS2Web Banner revisions'
+
+revert all os2web banner revisions:
+  title: 'Revert all OS2Web Banner revisions'
+  description: 'Role requires permission <em>view OS2Web Banner revisions</em> and <em>edit rights</em> for os2web banner entities in question or <em>administer os2web banner entities</em>.'
+
+delete all os2web banner revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view OS2Web Banner revisions</em> and <em>delete rights</em> for os2web banner entities in question or <em>administer os2web banner entities</em>.'
+

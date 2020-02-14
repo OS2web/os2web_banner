@@ -1,0 +1,19 @@
+langcode: da
+status: true
+dependencies:
+  module:
+    - os2web_banner
+    - text
+id: os2web_banner.field_os2web_banner_head
+field_name: field_os2web_banner_head
+entity_type: os2web_banner
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

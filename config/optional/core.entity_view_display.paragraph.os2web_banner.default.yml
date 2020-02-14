@@ -1,0 +1,20 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.os2web_banner.field_os2web_banner
+    - paragraphs.paragraphs_type.os2web_banner
+id: paragraph.os2web_banner.default
+targetEntityType: paragraph
+bundle: os2web_banner
+mode: default
+content:
+  field_os2web_banner:
+    weight: 0
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden: {  }

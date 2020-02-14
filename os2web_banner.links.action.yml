@@ -1,0 +1,5 @@
+entity.os2web_banner.add_form:
+  route_name: entity.os2web_banner.add_form
+  title: 'Add OS2Web Banner'
+  appears_on:
+    - entity.os2web_banner.collection

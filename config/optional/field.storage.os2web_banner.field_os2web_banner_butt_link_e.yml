@@ -1,0 +1,18 @@
+langcode: da
+status: true
+dependencies:
+  module:
+    - link
+    - os2web_banner
+id: os2web_banner.field_os2web_banner_butt_link_e
+field_name: field_os2web_banner_butt_link_e
+entity_type: os2web_banner
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

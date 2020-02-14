@@ -1,0 +1,22 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.os2web_banner.field_os2web_banner_butt_link_e
+  module:
+    - link
+    - os2web_banner
+id: os2web_banner.os2web_banner.field_os2web_banner_butt_link_e
+field_name: field_os2web_banner_butt_link_e
+entity_type: os2web_banner
+bundle: os2web_banner
+label: 'Eksternt link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

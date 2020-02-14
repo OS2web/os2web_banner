@@ -1,0 +1,24 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_os2web_banner
+    - paragraphs.paragraphs_type.os2web_banner
+id: paragraph.os2web_banner.field_os2web_banner
+field_name: field_os2web_banner
+entity_type: paragraph
+bundle: os2web_banner
+label: Banner
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:os2web_banner'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference
