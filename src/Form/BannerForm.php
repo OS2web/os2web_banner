@@ -104,9 +104,17 @@ class BannerForm extends ContentEntityForm {
       'callback' => [static::class, 'ajaxCallback'],
       'wrapper' => $wrapper_id,
     ];
+
+    $entity = $form_state->getFormObject()->getEntity();
+    $field_os2web_banner_butt_link = $entity->field_os2web_banner_butt_link;
     $link_type = NestedArray::getValue($form_state->getUserInput(), $form['field_os2web_banner_butt_link']['widget']['#parents']);
     if (empty($link_type)) {
-      $link_type = '_none';
+      if (!$field_os2web_banner_butt_link->isEmpty()) {
+        $link_type = $field_os2web_banner_butt_link->first()->value;
+      }
+      else {
+        $link_type = '_none';
+      }
     }
     switch ($link_type) {
       case '_none':
@@ -133,6 +141,8 @@ class BannerForm extends ContentEntityForm {
         $banner_form_parents[] = 'widget';
       }
     }
+    // @TODO Integration with Inline entity forms still works not well
+    // on edit mode.
     $banner_form = NestedArray::getValue($form, $banner_form_parents);
     return $banner_form;
   }
