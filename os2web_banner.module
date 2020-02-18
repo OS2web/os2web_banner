@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * @file
+ * OS2Web Banner module file.
+ */
+
+use Drupal\os2web_banner\Form\BannerForm;
+
+/**
+ * Implements hook_inline_entity_form_entity_form_alter().
+ */
+function os2web_banner_inline_entity_form_entity_form_alter(&$entity_form, &$form_state) {
+  if ($entity_form['#entity_type'] == 'os2web_banner') {
+    BannerForm::adjustForm($entity_form, $form_state);
+  }
+}
