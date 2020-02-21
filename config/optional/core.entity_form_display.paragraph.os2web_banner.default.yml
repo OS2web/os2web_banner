@@ -4,8 +4,6 @@ dependencies:
   config:
     - field.field.paragraph.os2web_banner.field_os2web_banner
     - paragraphs.paragraphs_type.os2web_banner
-  module:
-    - inline_entity_form
 id: paragraph.os2web_banner.default
 targetEntityType: paragraph
 bundle: os2web_banner
@@ -15,17 +13,11 @@ content:
     weight: 0
     settings:
       match_operator: CONTAINS
-      form_mode: default
-      override_labels: false
-      label_singular: ''
-      label_plural: ''
-      collapsible: false
-      collapsed: false
-      allow_new: true
-      allow_existing: false
-      allow_duplicate: false
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-    type: inline_entity_form_complex
+    type: entity_reference_autocomplete
     region: content
 hidden:
   created: true
