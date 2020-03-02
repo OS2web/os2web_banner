@@ -5,15 +5,11 @@ dependencies:
     - field.field.os2web_banner.os2web_banner.field_os2web_banner_bg
     - field.field.os2web_banner.os2web_banner.field_os2web_banner_butt
     - field.field.os2web_banner.os2web_banner.field_os2web_banner_butt_link
-    - field.field.os2web_banner.os2web_banner.field_os2web_banner_butt_link_e
-    - field.field.os2web_banner.os2web_banner.field_os2web_banner_butt_link_i
-    - field.field.os2web_banner.os2web_banner.field_os2web_banner_butt_text
     - field.field.os2web_banner.os2web_banner.field_os2web_banner_head
     - field.field.os2web_banner.os2web_banner.field_os2web_banner_link
     - field.field.os2web_banner.os2web_banner.field_os2web_banner_text
   module:
     - link
-    - options
     - os2web_banner
     - text
     - user
@@ -42,26 +38,7 @@ content:
     type: boolean
     region: content
   field_os2web_banner_butt_link:
-    weight: 7
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
-    region: content
-  field_os2web_banner_butt_link_e:
-    weight: 9
-    label: above
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    type: link
-    region: content
-  field_os2web_banner_butt_link_i:
-    weight: 8
+    weight: 10
     label: above
     settings:
       trim_length: 80
@@ -88,7 +65,7 @@ content:
     type: text_default
     region: content
   field_os2web_banner_link:
-    weight: 4
+    weight: 11
     label: above
     settings:
       trim_length: 80

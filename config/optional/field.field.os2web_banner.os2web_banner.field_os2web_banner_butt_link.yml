@@ -4,17 +4,19 @@ dependencies:
   config:
     - field.storage.os2web_banner.field_os2web_banner_butt_link
   module:
-    - options
+    - link
     - os2web_banner
 id: os2web_banner.os2web_banner.field_os2web_banner_butt_link
 field_name: field_os2web_banner_butt_link
 entity_type: os2web_banner
 bundle: os2web_banner
-label: 'Knap link'
+label: 'Button Links'
 description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings: {  }
-field_type: list_string
+settings:
+  link_type: 17
+  title: 2
+field_type: link

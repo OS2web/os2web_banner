@@ -10,13 +10,13 @@ id: os2web_banner.os2web_banner.field_os2web_banner_link
 field_name: field_os2web_banner_link
 entity_type: os2web_banner
 bundle: os2web_banner
-label: Link
+label: 'Banner Link'
 description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  link_type: 17
+  link_type: 1
   title: 0
 field_type: link
