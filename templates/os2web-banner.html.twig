@@ -16,6 +16,8 @@
  */
 #}
 <div{{ attributes.addClass('os2web_banner') }}>
+  {{ title_prefix }}
+  {{ title_suffix }}
   {% if content %}
     {{- content -}}
   {% endif %}
