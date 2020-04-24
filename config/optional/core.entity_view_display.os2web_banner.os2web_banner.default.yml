@@ -2,13 +2,15 @@ langcode: da
 status: true
 dependencies:
   config:
-    - field.field.os2web_banner.os2web_banner.field_os2web_banner_bg
     - field.field.os2web_banner.os2web_banner.field_os2web_banner_butt
     - field.field.os2web_banner.os2web_banner.field_os2web_banner_butt_link
     - field.field.os2web_banner.os2web_banner.field_os2web_banner_head
+    - field.field.os2web_banner.os2web_banner.field_os2web_banner_image
     - field.field.os2web_banner.os2web_banner.field_os2web_banner_link
     - field.field.os2web_banner.os2web_banner.field_os2web_banner_text
+    - image.style.paragraph_background_image
   module:
+    - image
     - link
     - os2web_banner
     - text
@@ -18,18 +20,9 @@ targetEntityType: os2web_banner
 bundle: os2web_banner
 mode: default
 content:
-  field_os2web_banner_bg:
-    type: entity_reference_entity_view
-    weight: 3
-    label: above
-    settings:
-      view_mode: default
-      link: false
-    third_party_settings: {  }
-    region: content
   field_os2web_banner_butt:
-    weight: 5
-    label: above
+    weight: 3
+    label: hidden
     settings:
       format: default
       format_custom_false: ''
@@ -38,8 +31,8 @@ content:
     type: boolean
     region: content
   field_os2web_banner_butt_link:
-    weight: 10
-    label: above
+    weight: 4
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
@@ -59,14 +52,23 @@ content:
     region: content
   field_os2web_banner_head:
     weight: 1
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
+  field_os2web_banner_image:
+    weight: 6
+    label: hidden
+    settings:
+      image_style: paragraph_background_image
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
   field_os2web_banner_link:
-    weight: 11
-    label: above
+    weight: 5
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
@@ -78,19 +80,11 @@ content:
     region: content
   field_os2web_banner_text:
     weight: 2
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
-  name:
-    label: above
-    type: string
-    weight: -4
-    region: content
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
   user_id:
     label: hidden
     type: author
@@ -100,3 +94,4 @@ content:
     third_party_settings: {  }
 hidden:
   langcode: true
+  name: true

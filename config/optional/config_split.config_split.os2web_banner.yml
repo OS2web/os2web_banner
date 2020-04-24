@@ -1,0 +1,18 @@
+langcode: da
+status: true
+dependencies: {  }
+id: os2web_banner
+label: 'OS2web banner'
+description: ''
+folder: modules/contrib/os2web_banner/config/optional
+module: {  }
+theme: {  }
+blacklist:
+  - 'os2web_banner*'
+  - '*os2web_banner'
+  - '*os2web_banner*'
+  - media.type.image
+graylist: {  }
+graylist_dependents: false
+graylist_skip_equal: false
+weight: 0
