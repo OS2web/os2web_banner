@@ -5,6 +5,7 @@ package: OS2Web
 dependencies:
   - options
   - link
-  - media
+  - image
+  - image_widget_crop
   - paragraphs
   - inline_entity_form
