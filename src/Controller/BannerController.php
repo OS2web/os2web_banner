@@ -125,7 +125,7 @@ class BannerController extends ControllerBase implements ContainerInjectionInter
           ]));
         }
         else {
-          $link = $os2web_banner->toLink($date);
+          $link = $os2web_banner->toLink($date)->toString();
         }
 
         $row = [];
