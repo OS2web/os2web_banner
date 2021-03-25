@@ -5,6 +5,7 @@ namespace Drupal\os2web_banner\Controller;
 use Drupal\Component\Utility\Xss;
 use Drupal\Core\Controller\ControllerBase;
 use Drupal\Core\DependencyInjection\ContainerInjectionInterface;
+use Drupal\Core\Link;
 use Drupal\Core\Url;
 use Drupal\os2web_banner\Entity\BannerInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
@@ -118,13 +119,13 @@ class BannerController extends ControllerBase implements ContainerInjectionInter
         // Use revision link to link to revisions that are not active.
         $date = $this->dateFormatter->format($revision->getRevisionCreationTime(), 'short');
         if ($vid != $os2web_banner->getRevisionId()) {
-          $link = $this->l($date, new Url('entity.os2web_banner.revision', [
+          $link = Link::fromTextAndUr($date, new Url('entity.os2web_banner.revision', [
             'os2web_banner' => $os2web_banner->id(),
             'os2web_banner_revision' => $vid,
           ]));
         }
         else {
-          $link = $os2web_banner->link($date);
+          $link = $os2web_banner->toLink($date);
         }
 
         $row = [];
